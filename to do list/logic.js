@@ -13,8 +13,8 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div>
-                <input placeholder='my new activity' ref={(input) => { this.textInput = input; }} />
+            <div >
+                <input placeholder='my new activity' ref={(input) => { this.textInput = input; }} className="input" />
                 <select ref={(value)=> {this.d = value}}>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -93,7 +93,7 @@ class App extends React.Component {
                     this.new.push(<li>{`${this.state.what} on ${this.state.day}/${this.state.month}/${this.state.year}`}</li>);
                     // <p>&#8226; {this.state.what} on {this.state.day}/{this.state.month}/{this.state.year}</p>
                 }}>Add</button>
-                <ul>
+                <ul className="list">
                     {this.new}
                 </ul>
             </div>
